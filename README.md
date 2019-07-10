@@ -1,4 +1,4 @@
 # Design Patterns
-- Creational
-- Structural
-- Behavioral
+* [Creational](creational)
+* [Behavioral](behavioral)
+* [Structural](structural)
