@@ -90,3 +90,5 @@ build
 .classpath
 .factorypath
 .project
+/.gradle/
+*/.gradle/*
