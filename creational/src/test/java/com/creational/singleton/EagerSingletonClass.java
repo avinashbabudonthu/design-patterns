@@ -7,15 +7,15 @@ package com.creational.singleton;
  * @author Avinash Babu Donthu
  *
  */
-public class SingletonClass {
+public class EagerSingletonClass {
 
-	private static SingletonClass INSTANCE = new SingletonClass();
+	private static EagerSingletonClass INSTANCE = new EagerSingletonClass();
 
-	private SingletonClass() {
+	private EagerSingletonClass() {
 
 	}
 
-	public static SingletonClass getInstnace() {
+	public static EagerSingletonClass getInstnace() {
 		return INSTANCE;
 	}
 }

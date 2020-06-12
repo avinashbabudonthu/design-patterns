@@ -1,28 +1,27 @@
-## Steps
-### Eager initialization
-* Create [SingletonClass.java](SingletonClass.java)
-	* This is singleton class with eager initialization
+## Eager initialization
+* Create [EagerSingletonClass.java](EagerSingletonClass.java)
+* This is singleton class with eager initialization
 ```
-private static SingletonClass INSTANCE = new SingletonClass();
+private static EagerSingletonClass INSTANCE = new EagerSingletonClass();
 ```
-	* With this eager initialization we can directly object on calling `SingletonClass.getInstnace()` method
+* With this eager initialization we can directly get object on calling `EagerSingletonClass.getInstnace()` method
 
-### Lazy initialization
-* Create [SingletonClass2.java](SingletonClass2.java)
-	* This is singleton class with lazy initialization
+## Lazy initialization
+* Create [LazySingletonClass.java](LazySingletonClass.java)
+* This is singleton class with lazy initialization
 ```
 private static SingletonClass2 INSTANCE = null
 ```
-	* Create object on calling `SingletonClass2.getInstance()` method
+* Create object on calling `LazySingletonClass.getInstance()` method
 ```
 synchronized (lock) {
 	if (null == INSTANCE)
-		INSTANCE = new SingletonClass2();
+		INSTANCE = new LazySingletonClass();
 }
 return INSTANCE;
 ```
 
-### Practice class
-* [SingletonPractice.java](SingletonPractice.java)
-	* `method1()` is to test eager initialization
-	* `method2()` is to test lazy initialization
+## Test class
+* [SingletonPattern.java](SingletonPattern.java)
+	* `eagerSingleton()` is to test eager initialization
+	* `lazySingleton()` is to test lazy initialization
