@@ -10,7 +10,7 @@ private static EagerSingletonClass INSTANCE = new EagerSingletonClass();
 * Create [LazySingletonClass.java](LazySingletonClass.java)
 * This is singleton class with lazy initialization
 ```
-private static SingletonClass2 INSTANCE = null
+private static LazySingletonClass INSTANCE = null
 ```
 * Create object on calling `LazySingletonClass.getInstance()` method
 ```
