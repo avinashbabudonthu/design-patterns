@@ -2,6 +2,9 @@ package com.creational.builder.pattern;
 
 import org.junit.Test;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class BuilderPattern {
 
 	@Test
@@ -10,12 +13,12 @@ public class BuilderPattern {
 
 		System.out.println("------ veg meal --------");
 		Meal vegMeal = mealBuilder.prepareVegMeal();
-		System.out.println("veg meal price=" + vegMeal.getPrice());
+		log.info("veg meal price={}", vegMeal.getPrice());
 		vegMeal.display();
 
 		System.out.println("------ non veg meal --------");
 		Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
-		System.out.println("non veg meal price=" + nonVegMeal.getPrice());
+		log.info("non veg meal price={}", nonVegMeal.getPrice());
 		nonVegMeal.display();
 	}
 }
