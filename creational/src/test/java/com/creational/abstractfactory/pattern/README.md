@@ -12,9 +12,9 @@
 * Create an implementation class [Square.java](Square.java)
 
 ## Abstract Factory
-* Create [AbstractFactory](AbstractFactory.java) class
 * Create [ColorFactory](ColorFactory.java) class
 * Create [ShapeFactory](ShapeFactory.java) class
+* Create [AbstractFactory](AbstractFactory.java) class
 * Create [FactoryProducer](FactoryProducer.java) class
 
 ## Test class
