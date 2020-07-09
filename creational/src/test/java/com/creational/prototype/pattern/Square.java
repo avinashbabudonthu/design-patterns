@@ -1,5 +1,8 @@
 package com.creational.prototype.pattern;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Square extends Shape {
 
 	public Square() {
@@ -8,7 +11,7 @@ public class Square extends Shape {
 
 	@Override
 	public void draw() {
-		System.out.println("square draw() method");
+		log.info("square draw() method");
 	}
 
 }

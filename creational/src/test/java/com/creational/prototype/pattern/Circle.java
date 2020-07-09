@@ -1,5 +1,8 @@
 package com.creational.prototype.pattern;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Circle extends Shape {
 
 	public Circle() {
@@ -8,7 +11,7 @@ public class Circle extends Shape {
 
 	@Override
 	public void draw() {
-		System.out.println("circle draw() method");
+		log.info("circle draw() method");
 	}
 
 }

@@ -2,6 +2,9 @@ package com.creational.prototype.pattern;
 
 import org.junit.Test;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class PrototypePattern {
 
 	@Test
@@ -12,13 +15,13 @@ public class PrototypePattern {
 		Shape cachedSquare = ShapeCache.getShape("2");
 		Shape cachedRectangle = ShapeCache.getShape("3");
 
-		System.out.println(cachedCircle.getType());
+		log.info(cachedCircle.getType());
 		cachedCircle.draw();
 
-		System.out.println(cachedSquare.getType());
+		log.info(cachedSquare.getType());
 		cachedSquare.draw();
 
-		System.out.println(cachedRectangle.getType());
+		log.info(cachedRectangle.getType());
 		cachedRectangle.draw();
 	}
 }

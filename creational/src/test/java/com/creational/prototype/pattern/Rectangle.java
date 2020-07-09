@@ -1,5 +1,8 @@
 package com.creational.prototype.pattern;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Rectangle extends Shape {
 
 	public Rectangle() {
@@ -8,7 +11,7 @@ public class Rectangle extends Shape {
 
 	@Override
 	public void draw() {
-		System.out.println("rectangle draw() method");
+		log.info("rectangle draw() method");
 	}
 
 }
